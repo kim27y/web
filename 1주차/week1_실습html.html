@@ -23,23 +23,26 @@
 
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" type="text/css" href="../2주차/week2_실습.css">
 </head>
 <body>
     <header> <!--h1은 글씨를 넣는 느낌, header가 나음-->
-        <img src="naver.png">
+      
     </header>
-    <main> 
+    <main id="mains"> 
+        <img id="img_naver" src="naver.png">
         <div>
-            <input type="text">
+            <input type="text" class="typing">
         </div>
         <div>
-            <input type="text">
+            <input type="text" class="typing">
         </div>
         <div>
-            <input type="button" value="로그인">
+            <input type="button" value="로그인" id="login_button">
         </div>
-        <div>
-            로그인 상태 유지 IP 보안 OFF<!--나는 메뉴로 생각, 팀장은 하나로 묶어서 생각-->
+        <div id="somediv">
+            <span id="sangtae">로그인 상태 유지</span> 
+            <span id="boan">IP 보안 OFF</span><!--나는 메뉴로 생각, 팀장은 하나로 묶어서 생각-->
         </div>
     </main>
     

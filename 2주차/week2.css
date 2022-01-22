@@ -1,0 +1,62 @@
+/*><!--id는 앞에 #--><!--class는 앞에 .--> <!--id가 class에 선행해서 적용-->*/
+/*https://www.w3schools.com/cssref/default.asp*/
+/*
+#hi {             
+    background-color : red;
+}
+
+.box {            
+    background-color : green;
+}
+
+div { 태그 자체에 적용
+    color : white
+}
+*/
+
+#box1 {
+    background-color: purple;
+    margin: 50px; /*상하좌우 여백, 퍼센트로도 가능*/
+    margin-left: 50px; /*퍼센트로 줄 경우 사이트 크기 따라 위치이동*/
+    display: block; /*display div의 기본 속성은 block*/
+}
+
+#box2 {
+    background-color: #4f0a4f;
+    padding-left: 50px; /*안쪽 여백, 전체 길이에 영향 줌*/
+    border: 1px solid black; /*굵기 속성(solid, doted) 색상*/
+    border-radius: 10px; /*약간 둥글게*/
+}
+
+#box3 {
+    background-color: #1f061f;
+    position: static; /*position은 static이 기본값, 
+                                   relative -> 미세조정시 사용, left right top bottom 설정 가능
+                                   fixed ->  절대값으로 설정, 스크롤 이동해도 고정됨
+                                   absoute -> 거의 안씀, 절대적 고정값,
+                                                        */
+}
+
+#span1 {
+    display: block; /*display span 의 기본 속성은 inline, inline은 가로세로길이 못바꿈->fit-contetn*/
+}
+
+#span2 {
+    display: inline-block; /*가로세로 길이 정할 수 있는 inline*/
+}
+
+.boxes { /*px로도 줄 수 있고 퍼센트로도 줄 수 있음*/
+    /*fit-content => 안에 들어가 있는 값에 맞춰서 설정*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 40px;
+    color: #ffffff;
+    font-size:30px; /*16px이 기본*/
+    font-weight: 400; /*400이 기본, 100댠위이며 되는 수치가 정해져 있음 100 400 600*/
+    text-align: center; /*패딩의 경우 패딩을 무시하고 가운데 정렬*/
+
+}
+/*margin-left/right: auto => 가운데 정렬*/
+/*inline의 경우에는 부모 태그에다가 text-allign을 줘야함*/
+/*flex display 공부해보기*/
