@@ -11,16 +11,15 @@ var failImg = document.getElementById("fail");
 var num1, num2, num3;
 var trnum = 1;
 
-function sleep(ms) {
-    return new Promise((nexts) => setTimeout(nexts,ms));
-}
+// function sleep(ms) {
+//     return new Promise((nexts) => setTimeout(nexts,ms));
+// }
 
 function getIndex(className, classObj) {
     var classes = document.getElementsByClassName(className);
     for (var i = 0; classes[i]!=classObj; i++){}
     return parseInt(i);
 }
-
 
 function start(){
     startButton.style.display = "none";
@@ -35,7 +34,7 @@ function generateNum() {
 }
 
 function startGame() {
-    sleep(300);
+    // sleep(300);
     startImg.style.display="none";
     ballDiv.style.display="inline-flex";
     numButtons.style.display="inline-flex";
