@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="icon" href="picture/youtube.PNG">
+    <link  rel="stylesheet" type="text/css" href="./week2_과제_conf.css">
+    <link  rel="stylesheet" type="text/css" href="./week2_과제.css">
+    <link  rel="stylesheet" type="text/css" href="./week2_과제_midea.css">
+</head>
+<body>
+    <div id="allgray" onclick="clickGray()"></div>
+    <header id="headers">
+        <div id="logo">
+            <span><a href="#" onclick="cclick()"><img src="./picture/threeline.PNG"></a></span><!--삼줄-->
+            <span><a href="#"><img src="./picture/logo.PNG"></a></span><!--유튜브로고-->
+        </div>
+        <div id="search"><!--검색및버튼-->
+            <input type="text" id="text" placeholder="검색"
+            ><a href="#"><img src="./picture/search.PNG"></a
+            ><a href="#"><img src="./picture/mic.PNG"></a><!--마이크-->
+        </div>
+        <div id="icons">
+            <a href="#" id="miniDotbogi"><img src="./picture/miniDotbogi.png"></a>
+            <a href="#"><img src="./picture/plusmic.PNG"></a><!--촬영모드-->
+            <a href="#"><img src="./picture/ninesquare.PNG"></a><!--네모9개-->
+            <a href="#"><img src="./picture/bell.PNG"></a><!--종모양-->
+            <a href="#"><img src="./picture/gu.PNG"></a><!--구동그라미-->
+        </div>
+    </header> <!--맨 윗줄-->
+
+    <span id="leftmenu">
+        <div id="homeicon">
+            <a href="#" class="leftAnchor"><img src="./picture/home.PNG" class="leftImg"> 홈</a>
+            <a href="#" class="leftAnchor"><img src="./picture/tamsaek.PNG" class="leftImg"> 탐색</a>
+            <a href="#" class="leftAnchor"><img src="./picture/shorts.PNG" class="leftImg"> Shorts</a>
+            <a href="#" class="leftAnchor"><img src="./picture/gudok.PNG" class="leftImg"> 구독</a>
+        </div>
+        <hr>
+        <div id="functionicon">
+            <a href="#" class="leftAnchor"><img src="./picture/bogwan.PNG" class="leftImg"> 보관함</a>
+            <a href="#" class="leftAnchor"><img src="./picture/sichung.PNG" class="leftImg"> 시청 기록</a>
+            <a href="#" class="leftAnchor"><img src="./picture/myvideo.PNG" class="leftImg"> 내 동영상</a>
+            <a href="#" class="leftAnchor"><img src="./picture/nextvideo.PNG" class="leftImg"> 나주엥 볼 동영상</a>
+            <a href="#" class="leftAnchor"><img src="./picture/goodvideo.PNG" class="leftImg"> 좋아요 표시한 동영상</a>
+            <a href="#" class="leftAnchor"><img src="./picture/dubogi.PNG" class="leftImg"> 더보기</a>
+        </div>
+        <hr>
+        <div id="gudokicon">
+            <div>구독</div>
+            <a href="#" class="leftAnchor"><img src="./picture/gudok1.jpg" class="leftImg gudoks"> Cold Water</a>
+            <a href="#" class="leftAnchor"><img src="./picture/gudok2.jpg" class="leftImg gudoks"> 김성회의 G식백과</a>
+            <a href="#" class="leftAnchor"><img src="./picture/gudok3.jpg" class="leftImg gudoks"> 지식보관소</a>
+            <a href="#" class="leftAnchor"><img src="./picture/gudok4.jpg" class="leftImg gudoks"> 옴걸모먼트</a>
+            <a href="#" class="leftAnchor"><img src="./picture/gudok5.jpg" class="leftImg gudoks"> 티키틱 TIKITIK</a>
+            <a href="#" class="leftAnchor"><img src="./picture/gudok6.jpg" class="leftImg gudoks"> nami nami</a>
+            <a href="#" class="leftAnchor"><img src="./picture/gudok7.jpg" class="leftImg gudoks"> 뭐가살쪄</a>
+            <a href="#" class="leftAnchor"><img src="./picture/dubogi.PNG" class="leftImg gudoks"> 65개 더보기</a>
+        </div>
+        <hr>
+        <div id="dubogiicon">
+            <div>YOUTUBE 더보기</div>
+            <a href="#" class="leftAnchor"><img src="./picture/preminum.PNG" class="leftImg"> YouTube Premium</a>
+            <a href="#" class="leftAnchor"><img src="./picture/movie.PNG" class="leftImg"> 영화</a>
+            <a href="#" class="leftAnchor"><img src="./picture/game.PNG" class="leftImg"> 게임</a>
+            <a href="#" class="leftAnchor"><img src="./picture/realtime.PNG" class="leftImg"> 실시간</a>
+            <a href="#" class="leftAnchor"><img src="./picture/study.PNG" class="leftImg"> 학습</a>
+            <a href="#" class="leftAnchor"><img src="./picture/sports.PNG" class="leftImg"> 스포츠</a>
+        </div>
+        <hr>
+        <div id="settingicon">
+            <a href="#" class="leftAnchor"><img src="./picture/setting.PNG" class="leftImg"> 설정</a>
+            <a href="#" class="leftAnchor"><img src="./picture/singo.PNG" class="leftImg"> 신고 기록</a>
+            <a href="#" class="leftAnchor"><img src="./picture/cilentCenter.PNG" class="leftImg"> 고객센터</a>
+            <a href="#" class="leftAnchor"><img src="./picture/send.PNG" class="leftImg"> 의견 보내기</a>
+        </div>
+        <hr>
+        <div id="youtube--information">
+            <a href="#">정보</a> <a href="#">보도자료</a> <a href="#">저작권</a><br>
+            <a href="#">문의하기</a> <a href="#">크리에이터</a> <a href="#">광고개발자</a>
+            <br><br>
+            <a href="#">약관</a> <a href="#">개인정보처리방침</a> <br>
+            <a href="#">정책 및 안전</a> <br>
+            <a href="#">YouTube 작동의 원리</a> <br>
+            <a href="#">새로운 기능 테스트하기</a> <br>
+            <br><br>
+            <div>© 2021 Google LLC</div>
+            <div>CEO: 선다 피차이</div>
+            <div>주소: 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.</div>
+            <div>전화: 080-822-1450(무료)</div>
+        </div>
+    </span><!--왼쪽-->
+
+    <span id="leftsidemenu">
+        <div id="logo">
+            <span><a href="#" onclick="cclick()"><img src="./picture/threeline.PNG"></a></span><!--삼줄-->
+            <span><a href="#"><img src="./picture/logo.PNG"></a></span><!--유튜브로고-->
+        </div>
+        <div id="homeicon">
+            <a href="#" class="leftAnchor"><img src="./picture/home.PNG" class="leftImg"> 홈</a>
+            <a href="#" class="leftAnchor"><img src="./picture/tamsaek.PNG" class="leftImg"> 탐색</a>
+            <a href="#" class="leftAnchor"><img src="./picture/shorts.PNG" class="leftImg"> Shorts</a>
+            <a href="#" class="leftAnchor"><img src="./picture/gudok.PNG" class="leftImg"> 구독</a>
+        </div>
+        <hr>
+        <div id="functionicon">
+            <a href="#" class="leftAnchor"><img src="./picture/bogwan.PNG" class="leftImg"> 보관함</a>
+            <a href="#" class="leftAnchor"><img src="./picture/sichung.PNG" class="leftImg"> 시청 기록</a>
+            <a href="#" class="leftAnchor"><img src="./picture/myvideo.PNG" class="leftImg"> 내 동영상</a>
+            <a href="#" class="leftAnchor"><img src="./picture/nextvideo.PNG" class="leftImg"> 나주엥 볼 동영상</a>
+            <a href="#" class="leftAnchor"><img src="./picture/goodvideo.PNG" class="leftImg"> 좋아요 표시한 동영상</a>
+            <a href="#" class="leftAnchor"><img src="./picture/dubogi.PNG" class="leftImg"> 더보기</a>
+        </div>
+        <hr>
+        <div id="gudokicon">
+            <div>구독</div>
+            <a href="#" class="leftAnchor"><img src="./picture/gudok1.jpg" class="leftImg gudoks"> Cold Water</a>
+            <a href="#" class="leftAnchor"><img src="./picture/gudok2.jpg" class="leftImg gudoks"> 김성회의 G식백과</a>
+            <a href="#" class="leftAnchor"><img src="./picture/gudok3.jpg" class="leftImg gudoks"> 지식보관소</a>
+            <a href="#" class="leftAnchor"><img src="./picture/gudok4.jpg" class="leftImg gudoks"> 옴걸모먼트</a>
+            <a href="#" class="leftAnchor"><img src="./picture/gudok5.jpg" class="leftImg gudoks"> 티키틱 TIKITIK</a>
+            <a href="#" class="leftAnchor"><img src="./picture/gudok6.jpg" class="leftImg gudoks"> nami nami</a>
+            <a href="#" class="leftAnchor"><img src="./picture/gudok7.jpg" class="leftImg gudoks"> 뭐가살쪄</a>
+            <a href="#" class="leftAnchor"><img src="./picture/dubogi.PNG" class="leftImg gudoks"> 65개 더보기</a>
+        </div>
+        <hr>
+        <div id="dubogiicon">
+            <div>YOUTUBE 더보기</div>
+            <a href="#" class="leftAnchor"><img src="./picture/preminum.PNG" class="leftImg"> YouTube Premium</a>
+            <a href="#" class="leftAnchor"><img src="./picture/movie.PNG" class="leftImg"> 영화</a>
+            <a href="#" class="leftAnchor"><img src="./picture/game.PNG" class="leftImg"> 게임</a>
+            <a href="#" class="leftAnchor"><img src="./picture/realtime.PNG" class="leftImg"> 실시간</a>
+            <a href="#" class="leftAnchor"><img src="./picture/study.PNG" class="leftImg"> 학습</a>
+            <a href="#" class="leftAnchor"><img src="./picture/sports.PNG" class="leftImg"> 스포츠</a>
+        </div>
+        <hr>
+        <div id="settingicon">
+            <a href="#" class="leftAnchor"><img src="./picture/setting.PNG" class="leftImg"> 설정</a>
+            <a href="#" class="leftAnchor"><img src="./picture/singo.PNG" class="leftImg"> 신고 기록</a>
+            <a href="#" class="leftAnchor"><img src="./picture/cilentCenter.PNG" class="leftImg"> 고객센터</a>
+            <a href="#" class="leftAnchor"><img src="./picture/send.PNG" class="leftImg"> 의견 보내기</a>
+        </div>
+        <hr>
+        <div id="youtube--information">
+            <a href="#">정보</a> <a href="#">보도자료</a> <a href="#">저작권</a><br>
+            <a href="#">문의하기</a> <a href="#">크리에이터</a> <a href="#">광고개발자</a>
+            <br><br>
+            <a href="#">약관</a> <a href="#">개인정보처리방침</a> <br>
+            <a href="#">정책 및 안전</a> <br>
+            <a href="#">YouTube 작동의 원리</a> <br>
+            <a href="#">새로운 기능 테스트하기</a> <br>
+            <br><br>
+            <div>© 2021 Google LLC</div>
+            <div>CEO: 선다 피차이</div>
+            <div>주소: 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.</div>
+            <div>전화: 080-822-1450(무료)</div>
+        </div>
+    </span><!--왼쪽-->
+
+    <span id="leftminimenu">
+        <a href="#" class="leftminiAnchor"><img src="./picture/miniHome.png"></a>
+        <a href="#" class="leftminiAnchor"><img src="./picture/miniSearch.png"></a>
+        <a href="#" class="leftminiAnchor"><img src="./picture/miniShorts.png"></a>
+        <a href="#" class="leftminiAnchor"><img src="./picture/miniGudok.png"></a>
+        <a href="#" class="leftminiAnchor"><img src="./picture/miniBogwan.png"></a>
+    </span>
+
+    <main id="mains">
+        <div class="mainOneLine">
+            <span class="mainBox">
+                <div class="mainVideo">
+                    <a href="#">
+                        <img src="./picture/mainVideo.PNG" class="videoImage">
+                    </a>
+                </div>
+                <a href="#" class="mainProfile">
+                    <img src="./picture/mainProfile.PNG" class="videoImage">
+                </a>
+                <a href="#" class="mainContents">
+                    <div class="mainTitle">공부할때 듣는 음악 모음♬ (집중력 높이는 음악) 성적 향상!! 이건 줄어드는지 확인</div>
+                    <div>
+                    Tido Kang<br>
+                    조회수 367만회&#183;2년 전
+                    </div>
+                </a>
+            </span>
+            <span class="mainBox">
+                <div class="mainVideo">
+                    <a href="#">
+                        <img src="./picture/mainVideo.PNG" class="videoImage">
+                    </a>
+                </div>
+                <a href="#" class="mainProfile">
+                    <img src="./picture/mainProfile.PNG" class="videoImage">
+                </a>
+                <a href="#" class="mainContents">
+                    <div class="mainTitle">공부할때 듣는 음악 모음♬ (집중력 높이는 음악) 성적 향상!! 이건 줄어드는지 확인</div>
+                    <div>
+                    Tido Kang<br>
+                    조회수 367만회&#183;2년 전
+                    </div>
+                </a>
+            </span>
+            <span class="mainBox">
+                <div class="mainVideo">
+                    <a href="#">
+                        <img src="./picture/mainVideo.PNG" class="videoImage">
+                    </a>
+                </div>
+                <a href="#" class="mainProfile">
+                    <img src="./picture/mainProfile.PNG" class="videoImage">
+                </a>
+                <a href="#" class="mainContents">
+                    <div class="mainTitle">공부할때 듣는 음악 모음♬ (집중력 높이는 음악) 성적 향상!! 이건 줄어드는지 확인</div>
+                    <div>
+                    Tido Kang<br>
+                    조회수 367만회&#183;2년 전
+                    </div>
+                </a>
+            </span>
+            <span class="mainBox">
+                <div class="mainVideo">
+                    <a href="#">
+                        <img src="./picture/mainVideo.PNG" class="videoImage">
+                    </a>
+                </div>
+                <a href="#" class="mainProfile">
+                    <img src="./picture/mainProfile.PNG" class="videoImage">
+                </a>
+                <a href="#" class="mainContents">
+                    <div class="mainTitle">공부할때 듣는 음악 모음♬ (집중력 높이는 음악) 성적 향상!! 이건 줄어드는지 확인</div>
+                    <div>
+                    Tido Kang<br>
+                    조회수 367만회&#183;2년 전
+                    </div>
+                </a>
+            </span>
+        </div>
+        <div class="mainOneLine">
+            <span class="mainBox">
+                <div class="mainVideo">
+                    <a href="#">
+                        <img src="./picture/mainVideo.PNG" class="videoImage">
+                    </a>
+                </div>
+                <a href="#" class="mainProfile">
+                    <img src="./picture/mainProfile.PNG" class="videoImage">
+                </a>
+                <a href="#" class="mainContents">
+                    <div class="mainTitle">공부할때 듣는 음악 모음♬ (집중력 높이는 음악) 성적 향상!! 이건 줄어드는지 확인</div>
+                    <div>
+                    Tido Kang<br>
+                    조회수 367만회&#183;2년 전
+                    </div>
+                </a>
+            </span>
+            <span class="mainBox">
+                <div class="mainVideo">
+                    <a href="#">
+                        <img src="./picture/mainVideo.PNG" class="videoImage">
+                    </a>
+                </div>
+                <a href="#" class="mainProfile">
+                    <img src="./picture/mainProfile.PNG" class="videoImage">
+                </a>
+                <a href="#" class="mainContents">
+                    <div class="mainTitle">공부할때 듣는 음악 모음♬ (집중력 높이는 음악) 성적 향상!! 이건 줄어드는지 확인</div>
+                    <div>
+                    Tido Kang<br>
+                    조회수 367만회&#183;2년 전
+                    </div>
+                </a>
+            </span>
+            <span class="mainBox">
+                <div class="mainVideo">
+                    <a href="#">
+                        <img src="./picture/mainVideo.PNG" class="videoImage">
+                    </a>
+                </div>
+                <a href="#" class="mainProfile">
+                    <img src="./picture/mainProfile.PNG" class="videoImage">
+                </a>
+                <a href="#" class="mainContents">
+                    <div class="mainTitle">공부할때 듣는 음악 모음♬ (집중력 높이는 음악) 성적 향상!! 이건 줄어드는지 확인</div>
+                    <div>
+                    Tido Kang<br>
+                    조회수 367만회&#183;2년 전
+                    </div>
+                </a>
+            </span>
+            <span class="mainBox">
+                <div class="mainVideo">
+                    <a href="#">
+                        <img src="./picture/mainVideo.PNG" class="videoImage">
+                    </a>
+                </div>
+                <a href="#" class="mainProfile">
+                    <img src="./picture/mainProfile.PNG" class="videoImage">
+                </a>
+                <a href="#" class="mainContents">
+                    <div class="mainTitle">공부할때 듣는 음악 모음♬ (집중력 높이는 음악) 성적 향상!! 이건 줄어드는지 확인</div>
+                    <div>
+                    Tido Kang<br>
+                    조회수 367만회&#183;2년 전
+                    </div>
+                </a>
+            </span>
+        </div>
+        <div class="mainOneLine">
+            <span class="mainBox">
+                <div class="mainVideo">
+                    <a href="#">
+                        <img src="./picture/mainVideo.PNG" class="videoImage">
+                    </a>
+                </div>
+                <a href="#" class="mainProfile">
+                    <img src="./picture/mainProfile.PNG" class="videoImage">
+                </a>
+                <a href="#" class="mainContents">
+                    <div class="mainTitle">공부할때 듣는 음악 모음♬ (집중력 높이는 음악) 성적 향상!! 이건 줄어드는지 확인</div>
+                    <div>
+                    Tido Kang<br>
+                    조회수 367만회&#183;2년 전
+                    </div>
+                </a>
+            </span>
+            <span class="mainBox">
+                <div class="mainVideo">
+                    <a href="#">
+                        <img src="./picture/mainVideo.PNG" class="videoImage">
+                    </a>
+                </div>
+                <a href="#" class="mainProfile">
+                    <img src="./picture/mainProfile.PNG" class="videoImage">
+                </a>
+                <a href="#" class="mainContents">
+                    <div class="mainTitle">공부할때 듣는 음악 모음♬ (집중력 높이는 음악) 성적 향상!! 이건 줄어드는지 확인</div>
+                    <div>
+                    Tido Kang<br>
+                    조회수 367만회&#183;2년 전
+                    </div>
+                </a>
+            </span>
+            <span class="mainBox">
+                <div class="mainVideo">
+                    <a href="#">
+                        <img src="./picture/mainVideo.PNG" class="videoImage">
+                    </a>
+                </div>
+                <a href="#" class="mainProfile">
+                    <img src="./picture/mainProfile.PNG" class="videoImage">
+                </a>
+                <a href="#" class="mainContents">
+                    <div class="mainTitle">공부할때 듣는 음악 모음♬ (집중력 높이는 음악) 성적 향상!! 이건 줄어드는지 확인</div>
+                    <div>
+                    Tido Kang<br>
+                    조회수 367만회&#183;2년 전
+                    </div>
+                </a>
+            </span>
+            <span class="mainBox">
+                <div class="mainVideo">
+                    <a href="#">
+                        <img src="./picture/mainVideo.PNG" class="videoImage">
+                    </a>
+                </div>
+                <a href="#" class="mainProfile">
+                    <img src="./picture/mainProfile.PNG" class="videoImage">
+                </a>
+                <a href="#" class="mainContents">
+                    <div class="mainTitle">공부할때 듣는 음악 모음♬ (집중력 높이는 음악) 성적 향상!! 이건 줄어드는지 확인</div>
+                    <div>
+                    Tido Kang<br>
+                    조회수 367만회&#183;2년 전
+                    </div>
+                </a>
+            </span>
+        </div>
+        <div class="mainOneLine">
+            <span class="mainBox">
+                <div class="mainVideo">
+                    <a href="#">
+                        <img src="./picture/mainVideo.PNG" class="videoImage">
+                    </a>
+                </div>
+                <a href="#" class="mainProfile">
+                    <img src="./picture/mainProfile.PNG" class="videoImage">
+                </a>
+                <a href="#" class="mainContents">
+                    <div class="mainTitle">공부할때 듣는 음악 모음♬ (집중력 높이는 음악) 성적 향상!! 이건 줄어드는지 확인</div>
+                    <div>
+                    Tido Kang<br>
+                    조회수 367만회&#183;2년 전
+                    </div>
+                </a>
+            </span>
+            <span class="mainBox">
+                <div class="mainVideo">
+                    <a href="#">
+                        <img src="./picture/mainVideo.PNG" class="videoImage">
+                    </a>
+                </div>
+                <a href="#" class="mainProfile">
+                    <img src="./picture/mainProfile.PNG" class="videoImage">
+                </a>
+                <a href="#" class="mainContents">
+                    <div class="mainTitle">공부할때 듣는 음악 모음♬ (집중력 높이는 음악) 성적 향상!! 이건 줄어드는지 확인</div>
+                    <div>
+                    Tido Kang<br>
+                    조회수 367만회&#183;2년 전
+                    </div>
+                </a>
+            </span>
+            <span class="mainBox">
+                <div class="mainVideo">
+                    <a href="#">
+                        <img src="./picture/mainVideo.PNG" class="videoImage">
+                    </a>
+                </div>
+                <a href="#" class="mainProfile">
+                    <img src="./picture/mainProfile.PNG" class="videoImage">
+                </a>
+                <a href="#" class="mainContents">
+                    <div class="mainTitle">공부할때 듣는 음악 모음♬ (집중력 높이는 음악) 성적 향상!! 이건 줄어드는지 확인</div>
+                    <div>
+                    Tido Kang<br>
+                    조회수 367만회&#183;2년 전
+                    </div>
+                </a>
+            </span>
+            <span class="mainBox">
+                <div class="mainVideo">
+                    <a href="#">
+                        <img src="./picture/mainVideo.PNG" class="videoImage">
+                    </a>
+                </div>
+                <a href="#" class="mainProfile">
+                    <img src="./picture/mainProfile.PNG" class="videoImage">
+                </a>
+                <a href="#" class="mainContents">
+                    <div class="mainTitle">공부할때 듣는 음악 모음♬ (집중력 높이는 음악) 성적 향상!! 이건 줄어드는지 확인</div>
+                    <div>
+                    Tido Kang<br>
+                    조회수 367만회&#183;2년 전
+                    </div>
+                </a>
+            </span>
+        </div>
+    </main><!--본문 / 줄어들어야함-->
+    <script type="text/javascript" src="week2_과제.js"></script>
+</body>
+</html>

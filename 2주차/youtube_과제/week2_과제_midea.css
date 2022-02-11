@@ -1,0 +1,48 @@
+@media (max-width: 1300px) {
+    #leftmenu{
+        left:-100%;
+    }
+
+    .mainBox {
+        min-width: 25%;
+    }
+
+    main {
+        left: 100px;
+    }
+}
+
+@media (max-width: 900px) {
+    #leftminimenu {
+        display: none;
+    }
+
+    #search{
+        display: none;
+    }
+
+    #miniDotbogi {
+        display:inline-block;
+    }
+
+    main {
+        left: 0;
+    }
+
+    .mainBox {
+        max-width: 50%;
+        min-width: 250px;
+    }
+    
+}
+
+@media (max-width: 680px) {
+    .mainBox {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    #icons {
+        margin-right: 30px;
+    }
+}

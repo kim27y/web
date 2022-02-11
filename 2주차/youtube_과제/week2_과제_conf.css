@@ -1,0 +1,38 @@
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(97, 95, 95);
+    border-radius: 8px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    position:fixed;
+    width:97%;
+    top: 0;
+    height:50px;
+    width:100%;
+    background-color: white;
+    opacity: 0.97;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+main {
+    position:relative;
+    width: 85%;
+    top: 40px;
+    left:230px;
+    padding-left: 25px;
+    padding-top: 30px;
+    background-color: rgba(238, 236, 236, 0.952);
+}

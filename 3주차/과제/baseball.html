@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" type="text/css" href="./baseball.css">
+</head>
+<body>
+    <!--게임 로고 및 버튼 보이게 하는 히든 장치-->
+    <div id="hiddenButton" onclick="start()"></div>  
+    <!--게임 타이틀(숫자야구ver보노보노)-->
+    <div id="startTitle"><img src="img/startName.png"></div>
+    <!--시작 버튼, 클릭 되면 사라져서 영영 안보임-->
+    <img src="img/startImg.png" id="startImg" onclick="startGame()">
+    <main>
+        <!--왼쪽 현황판-->
+        <table id="socores">
+            <thead>
+                <tr>
+                    <td>회 차</td>
+                    <td>1번째 글자</td>
+                    <td>2번째 글자</td>
+                    <td>3번째 글자</td>
+                    <td>strike</td>
+                    <td>ball</td>
+                    <td>out</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--가운데 공들 -->
+        <div id="ballDiv">
+            <div>
+                <img src="img/ball.png" class="numBall">
+                <span class="ballText" id="ball1" onclick="clickBall(this)"> </span>
+            </div>
+            <div>
+                <img src="img/ball.png" class="numBall">
+                <span class="ballText" id="ball2" onclick="clickBall(this)"> </span>
+            </div>
+            <div>
+                <img src="img/ball.png" class="numBall">
+                <span class="ballText" id="ball3" onclick="clickBall(this)"> </span>
+            </div>
+        </div>
+        <!--오른쪽 버튼들-->
+        <div id="numButtons">
+            <div>
+                <button class="buttons" onclick="clickButton(this)">1</button>
+                <button class="buttons" onclick="clickButton(this)">2</button>
+                <button class="buttons" onclick="clickButton(this)">3</button>
+            </div>
+            <div>
+                <button class="buttons" onclick="clickButton(this)">4</button>
+                <button class="buttons" onclick="clickButton(this)">5</button>
+                <button class="buttons" onclick="clickButton(this)">6</button>
+            </div>
+            <div>
+                <button class="buttons" onclick="clickButton(this)">7</button>
+                <button class="buttons" onclick="clickButton(this)">8</button>
+                <button class="buttons" onclick="clickButton(this)">9</button>
+            </div>
+            <div>
+                <button class="buttons" onclick="clickButton(this)">입력</button>
+                <button class="buttons" onclick="clickButton(this)">↑</button>
+                <button class="buttons" onclick="clickButton(this)">↓</button>
+            </div>
+            <button class="buttons delButton" onclick="clickButton(this)">삭제</button>
+        </div>
+    </main>
+    <img src="img/victory.png" id="victory">
+    <img src="img/fail.png" id="fail">
+    <script type="text/javascript" src="baseball.js"></script>
+</body>
+</html>

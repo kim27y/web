@@ -1,0 +1,110 @@
+body {
+    overflow: hidden;
+    background-image: url("img/baseballs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#startTitle {
+    position: relative;
+    top: 30%;
+    left: 38%;
+    font-size: 200%;
+    display: none;
+}
+
+#hiddenButton {
+    display: inline-block;
+    width: 98vw;
+    height: 98vh;
+}
+
+#startImg {
+    position: relative;
+    width: 25%;
+    left: 38%;
+    height: auto;
+    display: none;
+}
+
+#startImg:hover {
+    transform: translate(15px,-15px);
+    transition: all .35s;
+}
+
+#startImg:active {
+    filter: brightness(0.3);
+    transform: translate(0,8px);
+    transition: all .10s;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    
+}
+#socores {
+    position: relative;
+    display: none;
+    width: 25%;
+    height:fit-content;
+    left: 10%;
+    background-color: white;
+    
+}
+
+#ballDiv {
+    position: relative;
+    display:none;
+    flex-direction: column;
+    width:fit-content;
+    left:15%;
+}
+
+.numBall {
+    position: relative;
+    width: 60%;
+}
+
+.ballText {
+    font-size: 70px;
+    font-weight: bold;
+    position: absolute;
+    left: 29%;
+    margin-top: 35px;
+    transform: translate(-5px,4px);
+}
+
+#numButtons {
+    position: relative;
+    left: 10%;
+    display: none;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.buttons {
+    width:80px;
+    height: 80px;
+}
+
+.delButton {
+    width:100%;
+}
+
+#victory {
+    display: none;
+    position: absolute;
+    left: 25%;
+    top:15%;
+    width:60%;
+}
+
+#fail {
+    display: none;
+    position: absolute;
+    left: 25%;
+    top:15%;
+    width:60%;
+}
