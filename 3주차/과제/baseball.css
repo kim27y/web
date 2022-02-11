@@ -73,7 +73,7 @@ main{
     position: absolute;
     left: 29%;
     margin-top: 35px;
-    transform: translate(-5px,4px);
+    transform: translate(-5px,4px); /*DOM에 효과 주는 것*/
 }
 
 #numButtons {
