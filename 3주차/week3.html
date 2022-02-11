@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Example</h1>
+    <table>
+        <tr>
+            <td><input type="button" value="/" onclick="insertDivide()"></td>
+            <td><input type="button" value="*" onclick="insertMultiple()"></td>
+            <td><input type="button" value="-" onclick="insertSubstract()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="insertOne()"></td>
+            <td><input type="button" value="2" onclick="insertTwo()"></td>
+            <td><input type="button" value="3" onclick="insertThree()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="insertFour()"></td>
+            <td><input type="button" value="5" onclick="insertFive()"></td>
+            <td><input type="button" value="6" onclick="insertSix()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="insertSeven()"></td>
+            <td><input type="button" value="8" onclick="insertEight()"></td>
+            <td><input type="button" value="9" onclick="insertNine()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="+" onclick="insertPlus()"></td>
+            <td></td>
+            <td><input type="button" value="=" onclick="insertequal()" style="width: 60px;"></td>
+    </table>
+    <input type="text" id="doing"><br>
+    <input type="text" id="inputa">
+    <input type="text" id="giho" style="width: 7px;">
+    <input type="text" id="inputb">
+    <input type="button" value="출력" onclick="add()">
+    <div id="resultbox"> <!--js에서는 id값 기준-->
+        0
+    </div>
+    <!--<script></script> 로 안에서 쓸 수 있음-->
+    <!--
+    <script>
+        console.log("hello"); /*세미클론을 안찍어도 됨*/
+        /*결과창은 F12-console에 뜸*/
+    </script>
+    body 끝에 script 몰아쓰는게 원칙
+    -->
+    
+    <script src="week3.js"></script>
+</body>
+</html>
