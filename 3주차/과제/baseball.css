@@ -108,3 +108,7 @@ main{
     top:15%;
     width:60%;
 }
+
+@media all and (max-width < 1300) {
+    
+}
