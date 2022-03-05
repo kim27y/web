@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+#beforeGround {
+    width: 100%;
+    height: fit-content;
+}
+
+#leftLine {
+    border: solid 3px black;
+    text-align: left;
+}
