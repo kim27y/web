@@ -41,7 +41,7 @@ function duringPuzzleEvent() {
     event.preventDefault();
 }
 
-function takeGroundEvent(ev) {
+function takeGroundEvent(ev,puzzle) {
     ev.preventDefault();
     console.log("그라운드테이크");
 }
