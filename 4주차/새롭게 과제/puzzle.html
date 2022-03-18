@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" type="text/css" href="./puzzle.css">
+</head>
+<body>
+    <!--게임 타이틀(숫자야구ver보노보노)-->
+    <div id="startTitle"><img src="img/puzzleTitle.png" id="startImg"></div>
+    <!--시작 버튼, 클릭 되면 사라져서 영영 안보임-->
+    <img src="img/startImg.png" id="startButton" onclick="startGame()">
+    <main>
+        <div id="beforeGround"></div>
+        <hr id="leftLine">
+        <div id="foreGround">
+            <table id="puzzleTable">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <img src="img/victory.png" id="victory">
+    <script type="text/javascript" src="puzzle.js"></script>
+</body>
+</html>

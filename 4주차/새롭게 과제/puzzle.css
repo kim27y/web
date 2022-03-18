@@ -1,0 +1,94 @@
+body, html {
+    margin: 0;
+    width:100%;
+    height: 100%;
+}
+
+main {
+    display:none; 
+    width:100%;
+    height: 100%;
+}
+
+#startTitle {
+    position: relative;
+    width: 40%;
+    height: auto;
+    top: 10%;
+    left: 33%;
+}
+
+#startButton {
+    position: relative;
+    width: 25%;
+    left: 38%;
+    height: auto;
+}
+#startImg {
+    width:100%;
+    height: 100%;
+}
+
+#startButton:hover {
+    transform: translate(15px,-15px);
+    transition: all .35s;
+}
+
+#startButton:active {
+    filter: brightness(0.3);
+    transform: translate(0,8px);
+    transition: all .10s;
+}
+
+#beforeGround {
+    width: 100%;
+    height: fit-content;
+    display:flex;
+    justify-content: space-around;
+}
+
+#leftLine {
+    border: solid 3px black;
+    text-align: left;
+}
+
+#foreGround{
+    height:78%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#victory {
+    display: none;
+    position: absolute;
+    left: 25%;
+    top:15%;
+    width:60%;
+}
+
+#puzzleTable {
+    width:40%;
+    height: 50%;
+    background-image:url('./img/all.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.3;
+    border: 1px solid black;
+    border-spacing: 0;
+    box-sizing: border-box;
+}
+
+td {
+    border: 1px solid black;
+    padding:0px !important;
+    box-sizing: border-box;
+    border-spacing: unset;
+    border-collapse: collapse;
+    width: 25%;
+    height: 50%;
+}
+
+td img {
+    display: block;
+}
