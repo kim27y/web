@@ -8,9 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="beforeGround"></div>
-    <hr id="leftLine">
-    <div id="foreGround" ondragover="duringPuzzleEvent()" ondrop="takeGroundEvent(event,this)">.</div>
+    <img src="img/startImg.png" id="startImg" onclick="startGame()">
+    <div id="beforeGround" class="startGames"></div>
+    <hr id="leftLine" class="startGames">
+    <div id="foreGround" class="startGames" ondragover="duringPuzzleEvent()" ondrop="takeGroundEvent(event,this)">.</div>
     <script type="text/javascript" src="weel4_과제.js"></script>
 </body>
 </html>

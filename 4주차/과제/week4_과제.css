@@ -18,3 +18,15 @@ html, body {
     width:100%;
     height:78%;
 }
+
+#startImg {
+    position: relative;
+    width: 25%;
+    left: 38%;
+    height: auto;
+    display: none;
+}
+
+.class {
+    display:none;
+}
