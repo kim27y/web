@@ -4,11 +4,19 @@ html, body {
     height: 100%;
 }
 
+main {
+    position: relative;
+    display: inline-block;
+    top:5%;
+    height:95%;
+    width: 100%;
+}
+
 header {
     position:fixed;
     width:97%;
     top: 0;
-    height:50px;
+    height:5%;
     width:100%;
     background-color: purple;
     opacity: 0.97;
@@ -22,16 +30,72 @@ header {
     color: white;
 }
 
-#leftmenu {                       
-    display:flex;
-    flex-wrap: nowrap;
+#profile {
+    margin-bottom: 20px;
+}
+
+#leftMenu {                       
+    display:inline-flex;
     flex-direction: column;
-    overflow:scroll;
     position:fixed;
+    align-items: center;
+    justify-content: space-between;
     background-color: white;
-    top: 45px;
-    width:230px;
-    height:100%;
-    margin-top: 4px;
+    width:250px;
+    height: 100%;
+    margin-top: 65px;
+    margin-left: 2px;
     z-index: 1;
 }
+
+#leftName {
+    font-size: 25px;
+    text-align: center;
+}
+
+#leftJob {
+    font-size: 25px;
+    color: #AAAA;
+    text-align: center;
+}
+
+#myImg {
+    width:100%;
+}
+
+#linkImg {
+    margin-right: 10px;
+}
+
+#mainContent {
+    position: relative;
+    margin-left:5%;
+    left:270px;
+    width:86%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+article {
+    cursor: pointer;
+    width:40%;
+    height: 40%;
+    min-width:450px;
+    margin-right: 10%;
+    text-align: center;
+}
+
+article>p {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.contentImg {
+    width:90%;
+    height: 80%;
+}
+
